@@ -1,0 +1,13 @@
+
+<VirtualHost 192.168.0.40:80>
+	ServerAdmin herrmann.udo@gmx.de
+        Servername testaqua 
+	DocumentRoot /var/www/testaqua
+        ServerAlias theodor.aqua
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost> 
+
+<Directory /var/www/testaqua/>
+     AllowOverride All
+</Directory> 

@@ -1,0 +1,12 @@
+<VirtualHost 192.168.0.30:80>
+	ServerAdmin herrmann.udo@gmx.de
+        Servername aquarium
+	DocumentRoot /var/www/aquarium
+        ServerAlias www.herrmann-aquarium.de
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<Directory /var/www/aquarium/>
+      AllowOverride All
+</Directory> 
